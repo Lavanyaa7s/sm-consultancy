@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | SM Consultancy Services, Melaka</title>
+  <meta name="description" content="Contact SM Consultancy Services in Krubong, Melaka. Direct phone, WhatsApp, email, or online inquiry form for accounting and tax consultations.">
+  <meta property="og:title" content="Contact Us | SM Consultancy Services">
+  <meta property="og:description" content="Contact SM Consultancy Services in Krubong, Melaka. Direct phone, WhatsApp, email, or online inquiry form for accounting and tax consultations.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b2a5b'/%3E%3Ctext x='16' y='22' font-size='15' font-weight='700' text-anchor='middle' fill='%23c9a227' font-family='Georgia'%3ESM%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Libre Baskerville & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "name": "SM Consultancy Services",
+    "telephone": "+601129262577",
+    "email": "loogini@smconsultancy.info",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "261-1, Jalan Satu Krubong, Taman Satu Krubong",
+      "postalCode": "75260",
+      "addressLocality": "Melaka",
+      "addressCountry": "MY"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Info Bar -->
+  <div class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="topbar-left">
+        <span><i data-lucide="map-pin" style="width:14px;height:14px;display:inline-block;vertical-align:middle;color:var(--gold)"></i> 261-1, Jalan Satu Krubong, 75260 Melaka</span>
+        <span><i data-lucide="clock" style="width:14px;height:14px;display:inline-block;vertical-align:middle;color:var(--gold)"></i> Mon – Fri: 9:00 AM – 6:00 PM</span>
+      </div>
+      <div class="topbar-right">
+        <a href="mailto:loogini@smconsultancy.info"><i data-lucide="mail" style="width:14px;height:14px"></i> loogini@smconsultancy.info</a>
+        <a href="tel:+601129262577"><i data-lucide="phone" style="width:14px;height:14px"></i> +60 11-2926 2577</a>
+        <div class="social-pills">
+          <a href="#" class="social-pill" aria-label="Facebook"><i data-lucide="facebook" style="width:12px;height:12px"></i></a>
+          <a href="#" class="social-pill" aria-label="Instagram"><i data-lucide="instagram" style="width:12px;height:12px"></i></a>
+          <a href="#" class="social-pill" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:12px;height:12px"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="wrap bar">
+      <a class="logo" href="index.html">
+        SM <span>Consultancy</span>
+      </a>
+      <button class="burger" aria-label="Toggle Menu">
+        <i data-lucide="menu" style="width:22px;height:22px;color:var(--navy)"></i>
+      </button>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="industries.html">Case Study</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="on">Contact Us</a>
+      </nav>
+      <a class="btn btn-gold btn-pill btn-sm" href="contact.html">
+        <i data-lucide="calendar" style="width:16px;height:16px"></i> Free Consultation
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header with Breadcrumb -->
+    <section class="pagehead">
+      <div class="wrap">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep">&gt;</span>
+          <span class="current">Contact Us</span>
+        </nav>
+        <h1>Get In Touch With Our Advisors</h1>
+        <p>Whether you require monthly accounting, tax guidance, or e-Invoice readiness, we are here to support your growth.</p>
+      </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section>
+      <div class="wrap">
+        <div class="contact-section-grid">
+          <!-- Left: Clean Executive Form -->
+          <div class="contact-form-box reveal">
+            <span class="badge-pill badge-gold" style="margin-bottom:12px">ONLINE CONSULTATION INQUIRY</span>
+            <h2 style="font-family:var(--font-serif);font-size:1.85rem;margin-bottom:8px">Send Us a Message</h2>
+            <p style="color:var(--mut);margin-bottom:28px">Please provide your details and requirements. Our registered consultants will review your enquiry and respond promptly.</p>
+
+            <form id="inquiryForm" name="contact" method="POST" data-netlify="true" action="contact.html">
+              <input type="hidden" name="form-name" value="contact">
+
+              <div class="form-row-2">
+                <label>Full Name *
+                  <input type="text" id="formName" name="name" required placeholder="e.g. Tan Wei Ming">
+                </label>
+                <label>Phone / WhatsApp *
+                  <input type="tel" id="formPhone" name="phone" required placeholder="e.g. 011-2926 2577">
+                </label>
+              </div>
+
+              <div class="form-row-2">
+                <label>Email Address *
+                  <input type="email" id="formEmail" name="email" required placeholder="name@company.com.my">
+                </label>
+                <label>Service Area Required *
+                  <select id="formService" name="service" required>
+                    <option value="" disabled selected>Select a practice area...</option>
+                    <option value="Accounting & Bookkeeping">Accounting &amp; Bookkeeping</option>
+                    <option value="Taxation Services">Taxation Services (LHDN &amp; SST)</option>
+                    <option value="E-Invoice Services">E-Invoice Compliance</option>
+                    <option value="Payroll Services">Payroll &amp; HR Services</option>
+                    <option value="Business Setup & Advisory">Business Setup &amp; Advisory</option>
+                    <option value="General Consultation">General Financial Consultation</option>
+                  </select>
+                </label>
+              </div>
+
+              <label>Message / Specific Requirements *
+                <textarea id="formMessage" name="message" rows="5" required placeholder="Briefly describe your company, current accounts status, or upcoming deadlines..."></textarea>
+              </label>
+
+              <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-top:8px">
+                <button class="btn btn-gold btn-pill" type="submit" id="submitBtn" style="padding:14px 34px">
+                  <i data-lucide="message-circle" style="width:18px;height:18px"></i> Send via WhatsApp
+                </button>
+                <span style="font-size:0.82rem;color:var(--mut)">💬 Opens WhatsApp with your filled inquiry ready to send.</span>
+              </div>
+
+              <!-- Form status notification -->
+              <div id="formStatus" style="display:none;margin-top:16px;padding:14px 18px;border-radius:var(--r-md);font-size:0.92rem;background:#e6f9ed;border:1px solid #25d366;color:#074720;"></div>
+            </form>
+          </div>
+
+          <!-- Right: Info Cards & Office Hours -->
+          <div class="contact-info-column reveal">
+            <!-- Address Card -->
+            <div class="info-card">
+              <div class="info-card-icon"><i data-lucide="map-pin" style="width:24px;height:24px"></i></div>
+              <div class="info-card-text">
+                <h4>Melaka Practice Office</h4>
+                <p>261-1, Jalan Satu Krubong, Taman Satu Krubong, 75260 Melaka, Malaysia</p>
+                <a href="https://maps.google.com/?q=261-1+Jalan+Satu+Krubong+Melaka" target="_blank" rel="noopener" style="font-size:0.84rem;color:var(--gold);font-weight:600;display:inline-block;margin-top:6px">Open in Google Maps &rarr;</a>
+              </div>
+            </div>
+
+            <!-- Phone / WhatsApp Card -->
+            <div class="info-card">
+              <div class="info-card-icon"><i data-lucide="phone" style="width:24px;height:24px"></i></div>
+              <div class="info-card-text">
+                <h4>Direct Contact Line</h4>
+                <p><a href="tel:+601129262577" style="font-size:1.1rem;font-weight:700;color:var(--navy)">011-2926 2577</a></p>
+                <p style="font-size:0.84rem">Available for direct calls and WhatsApp chat</p>
+              </div>
+            </div>
+
+            <!-- Email Card -->
+            <div class="info-card">
+              <div class="info-card-icon"><i data-lucide="mail" style="width:24px;height:24px"></i></div>
+              <div class="info-card-text">
+                <h4>Email Inquiries</h4>
+                <p><a href="mailto:loogini@smconsultancy.info" style="font-weight:600;color:var(--navy)">loogini@smconsultancy.info</a></p>
+                <p style="font-size:0.84rem">Punctual responses within 24 hours</p>
+              </div>
+            </div>
+
+            <!-- Office Hours Card -->
+            <div class="hours-card">
+              <h4><i data-lucide="clock" style="width:20px;height:20px"></i> Office Hours</h4>
+              <div class="hours-list">
+                <div class="hours-row">
+                  <span>Monday – Friday</span>
+                  <span>9:00 AM – 6:00 PM</span>
+                </div>
+                <div class="hours-row">
+                  <span>Saturday</span>
+                  <span>9:00 AM – 1:00 PM</span>
+                </div>
+                <div class="hours-row">
+                  <span>Sunday &amp; Public Holidays</span>
+                  <span style="color:#f87171">Closed</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Fast WhatsApp Button -->
+            <a class="btn btn-navy btn-pill" href="https://wa.me/601129262577?text=Hi%20SM%20Consultancy%2C%20I%20would%20like%20to%20enquire%20about%20your%20services." target="_blank" rel="noopener" style="justify-content:center;padding:14px">
+              <i data-lucide="message-circle" style="width:18px;height:18px;color:#25d366"></i> Chat With Us on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div style="margin-top:60px" class="reveal">
+          <iframe class="map" title="SM Consultancy Services location" loading="lazy" src="https://www.google.com/maps?q=261-1+Jalan+Satu+Krubong+Taman+Satu+Krubong+75260+Melaka&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Luxury Footer -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a class="logo" href="index.html" style="color:#ffffff;margin-bottom:16px;display:inline-block">
+            SM <span style="color:var(--gold)">Consultancy</span>
+          </a>
+          <p>Premier accounting, tax filing, and corporate advisory firm in Krubong, Melaka. Dedicated to empowering Malaysian businesses with precision and integrity.</p>
+          <div class="social-pills" style="margin-top:20px">
+            <a href="#" class="social-pill" aria-label="Facebook"><i data-lucide="facebook" style="width:14px;height:14px"></i></a>
+            <a href="#" class="social-pill" aria-label="Instagram"><i data-lucide="instagram" style="width:14px;height:14px"></i></a>
+            <a href="#" class="social-pill" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:14px;height:14px"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="services.html#s0">Accounting &amp; Bookkeeping</a>
+          <a href="services.html#s1">Taxation Services</a>
+          <a href="services.html#s2">E-Invoice Compliance</a>
+          <a href="services.html#s3">Payroll Processing</a>
+          <a href="services.html#s4">Business Setup &amp; Advisory</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="industries.html">Who We Serve</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>Subscribe to receive quarterly tax updates, SST compliance alerts, and LHDN reminders.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault();alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Your email address..." required>
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 SM Consultancy Services. All rights reserved.</div>
+        <div>Melaka, Malaysia &bull; Reg: 2026-SM-001</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA -->
+  <a class="wa-float" href="https://wa.me/601129262577?text=Hi%20SM%20Consultancy%2C%20I%20would%20like%20to%20enquire." target="_blank" rel="noopener">
+    <i data-lucide="message-circle" style="width:18px;height:18px"></i> WhatsApp us
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

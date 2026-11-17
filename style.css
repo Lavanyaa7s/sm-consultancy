@@ -1350,6 +1350,57 @@ footer {
 }
 
 @media (max-width: 860px) {
+  /* ── Clean Compact Topbar on Mobile/Tablet ── */
+  .topbar {
+    padding: 7px 0;
+    font-size: 0.78rem;
+  }
+  .topbar-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0 16px;
+  }
+  .topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .topbar-left span:last-child {
+    display: none; /* Hide office hours on mobile/tablet to avoid clutter */
+  }
+  .topbar-left span:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .topbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .topbar-right a[href^="mailto"] {
+    display: none; /* Email is prominently in footer and contact page */
+  }
+  .topbar-right a[href^="tel"] {
+    white-space: nowrap;
+    font-weight: 700;
+    color: var(--gold);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .social-pills {
+    display: none; /* Social circles are in footer */
+  }
+
   .bar {
     height: 72px;
   }
@@ -1400,6 +1451,73 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .hide-mobile {
+    display: none !important;
+  }
+  .topbar {
+    padding: 6px 0;
+    font-size: 0.74rem;
+  }
+  .topbar-inner {
+    padding: 0 12px;
+  }
+  .topbar-left span:first-child {
+    max-width: 140px;
+  }
+  .topbar-right a[href^="tel"] {
+    font-size: 0.76rem;
+  }
+
+  /* Hero Section on Mobile */
+  .hero-fineco {
+    padding: 60px 0 85px;
+    min-height: auto;
+  }
+  .hero-content h1 {
+    font-size: 2.05rem;
+    line-height: 1.22;
+    margin-bottom: 16px;
+  }
+  .hero-content p.lead {
+    font-size: 0.96rem;
+    line-height: 1.62;
+    margin-bottom: 24px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Floating WhatsApp Button - Compact circular button on mobile (won't overlap hero buttons) */
+  .wa-float {
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    border-radius: 50%;
+    justify-content: center;
+    right: 16px;
+    bottom: 20px;
+    box-shadow: 0 4px 18px rgba(37, 211, 102, 0.5);
+    font-size: 0; /* Hides raw text */
+  }
+  .wa-float span,
+  .wa-float .wa-text {
+    display: none !important;
+  }
+  .wa-float i,
+  .wa-float svg {
+    width: 26px !important;
+    height: 26px !important;
+    margin: 0 !important;
+  }
+
   .grid-4-cards,
   .grid-6-services,
   .matrix-cards-2x2,
@@ -1409,18 +1527,6 @@ footer {
   }
   .stat-cell::after {
     display: none !important;
-  }
-  .hero-fineco {
-    padding: 70px 0 90px;
-    min-height: auto;
-  }
-  .topbar-left, .topbar-right {
-    justify-content: center;
-    width: 100%;
-  }
-  .topbar-inner {
-    flex-direction: column;
-    gap: 6px;
   }
 }
 
